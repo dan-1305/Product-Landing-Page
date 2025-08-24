@@ -1,0 +1,237 @@
+/* ===== Reset cơ bản ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  z-index: 10;
+}
+
+#header-img {
+  max-width: 150px;   /* giới hạn chiều rộng tối đa */
+  height: auto;       /* tự co theo tỉ lệ */
+  display: block;
+}
+
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* ===== Hero Section ===== */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  margin-top: 75px;
+  padding: 20px;
+  background: #fff;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#hero input[type='email'] {
+  padding: 10px;
+  height: 40px;
+  font-size: 1em;
+  border: 2px solid black;
+  border-radius: 4px;
+  width: 250px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hero input[type='submit']:hover {
+  background-color: #d4ac0d;
+}
+
+/* ===== Features Section ===== */
+#features {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex: 1 1 250px;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* ===== Video Section ===== */
+#video {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+#video iframe {
+  max-width: 100%;
+  border: none;
+}
+
+/* ===== Pricing Section ===== */
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+.price-box {
+  flex: 1 1 250px;
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.price-box h3 {
+  margin-bottom: 10px;
+}
+
+.price-box p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.price-box button {
+  padding: 10px 20px;
+  border: none;
+  background: #f1c40f;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.price-box button:hover {
+  background: #d4ac0d;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ===== Responsive cho tablet & mobile ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav > ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #hero {
+    height: auto;
+    margin-top: 120px; /* tránh header đè */
+  }
+
+  #hero h1 {
+    font-size: 1.5rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #hero input[type='email'],
+  #hero input[type='submit'] {
+    width: 90%;
+  }
+
+  #features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;      /* thêm padding để hover dễ bấm hơn */
+  border-radius: 4px;     /* bo nhẹ */
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #f1c40f;    /* nền vàng khi hover */
+  color: white;           /* chữ đổi màu trắng */
+}
