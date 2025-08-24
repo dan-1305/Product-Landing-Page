@@ -28,8 +28,7 @@ Chỉnh sửa
 ---
 
 ## 🖼️ Demo
-👉 [Live Demo Here](https://your-demo-link.com)  
-*(Replace with your GitHub Pages link, e.g. `https://username.github.io/product-landing-page/`)*
+👉 [Live Demo Here]https://dan-1305.github.io/Product-Landing-Page/
 
 ---
 
